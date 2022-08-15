@@ -2,7 +2,7 @@
 
 use this to create your own tree in your browser.
 
-### npm install react-js-data-tree-01
+### <a href="https://www.npmjs.com/package/react-js-data-tree-01" target="_blank"> npm install react-js-data-tree-01 </a>
 ![Screenshot from 2022-08-12 11-18-50](https://user-images.githubusercontent.com/87252360/184292625-7ed6e676-ad98-4894-b260-fa77de3dea3d.png)
 
 # Requirements
