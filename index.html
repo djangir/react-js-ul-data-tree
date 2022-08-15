@@ -26,38 +26,42 @@
       margin: 20px;
     }
 
+    div {
+      width: 100%;
+    }
+
   </style>
 </head>
 
 <body>
+  <div>
+    <h1> Npm Link :-
+      <a href="https://www.npmjs.com/package/react-js-data-tree-01" target="_blank">
+        npm install react-js-data-tree-01
+      </a>
+    </h1>
+    <h2> Code Link :-
+      <a href="https://github.com/djangir/react-js-ul-data-tree" target="_blank">
+        github Code
+      </a>
+    </h2>
 
-  <h1> Npm Link :-
-    <a href="https://www.npmjs.com/package/react-js-data-tree-01" target="_blank">
-      npm install react-js-data-tree-01
-    </a>
-  </h1>
-  <h2> Code Link :-
-    <a href="https://github.com/djangir/react-js-ul-data-tree" target="_blank">
-      github Code
-    </a>
-  </h2>
 
 
+    <hr />
 
-  <hr />
+    <h2> React Js Data Tree output example </h2>
+    <hr />
 
-  <h2> React Js Data Tree output example </h2>
-  <hr />
+    <hr />
 
-  <hr />
+    <img src="https://user-images.githubusercontent.com/87252360/184292625-7ed6e676-ad98-4894-b260-fa77de3dea3d.png"
+      alt="data tree react js " />
 
-  <img src="https://user-images.githubusercontent.com/87252360/184292625-7ed6e676-ad98-4894-b260-fa77de3dea3d.png"
-    alt="data tree react js " />
-
-  <hr />
-  <h2> Requirements </h2>
-  <hr />
-  <code>
+    <hr />
+    <h2> Requirements </h2>
+    <hr />
+    <code>
     <pre>
       let data = {
         "id": "0001",
@@ -88,148 +92,151 @@
 </code>
 
 
-  <hr />
-  <h2> properties :- </h2>
+    <hr />
+    <h2> properties :- </h2>
 
-  <hr />
-  <hr />
+    <hr />
+    <hr />
 
-  <table cellspacing='15px' cellpadding="10px">
-    <tr>
-      <th>name </th>
-      <th>isRequired </th>
-      <th>type </th>
-      <th>example </th>
-      <th>about </th>
-    </tr>
-    <tr>
+    <table cellspacing='15px' cellpadding="10px">
+      <tr>
+        <th>name </th>
+        <th>isRequired </th>
+        <th>type </th>
+        <th>example </th>
+        <th>about </th>
+      </tr>
+      <tr>
 
-      <td> data </td>
-      <td> required </td>
-      <td> array or object </td>
-      <td> data= {['name', 'age']} or data = {{name:'user', age:30}}</td>
-      <td> Data is the object
-        or
-        array that you want to show in the tree.
-      </td>
-    </tr>
-    <tr>
-      <td> heading </td>
-      <td>not required </td>
-      <td> "string" </td>
-      <td> heading="string" </td>
-      <td> Heading is the data that will be heading in the tree.</td>
-    </tr>
-    <tr>
-      <td> treeStyle </td>
-      <td>not required </td>
-      <td> style object </td>
-      <td> treeStyle = {{background:'red'}} </td>
-      <td> The outer div of the tree will be
-        styled
-        in TreeStyle. </td>
-    </tr>
-    <tr>
-      <td> boxStyle </td>
-      <td>not required </td>
-      <td> style object </td>
-      <td> boxStyle = {{background:'red'}} </td>
-      <td> Each box in the tree will be styled with
-        BoxStyle. </td>
-    </tr>
-    <tr>
-      <td> extraHtml </td>
-      <td> not required </td>
-      <td> function </td>
-      <td> extraHtml = {(data)=>{ console.log(data) return(<div>yourHtml</div>)}}
-      </td>
-      <td>
-        If any other HTML data is to be shown inside the box then it can be shown by extraHtml
-      </td>
-    </tr>
-    <tr>
-      <td> branchExtraHtml </td>
-      <td>not required </td>
-      <td> function </td>
-      <td> branchExtraHtml = {(data)=>{ console.log(data) return(&lt;div&gt;yourHtml
-        &lt;/div&gt;)}} </td>
-      <td> Where a branch is being built and some extra data is to be shown on it, then it will be shown through
-        branchExtraHtml.
-      </td>
-    </tr>
-    <tr>
-      <td> onClick </td>
-      <td>not required </td>
-      <td> function </td>
-      <td> onClick = {(data)=>{ console.log(data)}} </td>
-      <td>If you want to do something on
-        click of box then have to use onClick function it will return 2 parameters. 1st the data of that box and 2nd if
-        getDataOnClick has been sent in it then that </td>
-    </tr>
-    <tr>
-      <td> onClickBranch </td>
-      <td> not required </td>
-      <td> function </td>
-      <td> onClickBranch = {
-        (data)=>{ console.log(data)
-        return(
-        &lt;div&gt; yourHtml
-        &lt;/div&gt;
-        )}
-        } </td>
-      <td> Same as onclick but it will return 2nd param getDataOnClickBranch</td>
-    </tr>
-    <tr>
-      <td> getDataOnClick </td>
-      <td> not required </td>
-      <td> string </td>
-      <td> getDataOnClick = 'your key in data' </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> getDataOnClickBranch </td>
-      <td> not required </td>
-      <td> string </td>
-      <td> getDataOnClickBranch = 'your key in data' </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> showKey </td>
-      <td> not required </td>
-      <td> string </td>
-      <td> showKey = 'your key in data' </td>
-      <td> showKey is the key show that you want to show</td>
-    </tr>
-    <tr>
-      <td> showBranchKey </td>
-      <td> not required </td>
-      <td> string </td>
-      <td> showBranchKey = 'your key in data' </td>
-      <td> showBranchKey is the key show that
-        you
-        want
-        to show in branch box.</td>
-    </tr>
-    <tr>
-      <td> hideKey </td>
-      <td> not required </td>
-      <td> string </td>
-      <td> hideKey = 'your key in data' </td>
-      <td> hideKey is the key that you want to hide from
-        box</td>
-    </tr>
-  </table>
-  <hr />
-  <hr />
+        <td> data </td>
+        <td> required </td>
+        <td> array or object </td>
+        <td> data= {['name', 'age']} or data = {{name:'user', age:30}}</td>
+        <td> Data is the object
+          or
+          array that you want to show in the tree.
+        </td>
+      </tr>
+      <tr>
+        <td> heading </td>
+        <td>not required </td>
+        <td> "string" </td>
+        <td> heading="string" </td>
+        <td> Heading is the data that will be heading in the tree.</td>
+      </tr>
+      <tr>
+        <td> treeStyle </td>
+        <td>not required </td>
+        <td> style object </td>
+        <td> treeStyle = {{background:'red'}} </td>
+        <td> The outer div of the tree will be
+          styled
+          in TreeStyle. </td>
+      </tr>
+      <tr>
+        <td> boxStyle </td>
+        <td>not required </td>
+        <td> style object </td>
+        <td> boxStyle = {{background:'red'}} </td>
+        <td> Each box in the tree will be styled with
+          BoxStyle. </td>
+      </tr>
+      <tr>
+        <td> extraHtml </td>
+        <td> not required </td>
+        <td> function </td>
+        <td> extraHtml = {(data)=>{ console.log(data) return(<div>yourHtml</div>)}}
+        </td>
+        <td>
+          If any other HTML data is to be shown inside the box then it can be shown by extraHtml
+        </td>
+      </tr>
+      <tr>
+        <td> branchExtraHtml </td>
+        <td>not required </td>
+        <td> function </td>
+        <td> branchExtraHtml = {(data)=>{ console.log(data) return(&lt;div&gt;yourHtml
+          &lt;/div&gt;)}} </td>
+        <td> Where a branch is being built and some extra data is to be shown on it, then it will be shown through
+          branchExtraHtml.
+        </td>
+      </tr>
+      <tr>
+        <td> onClick </td>
+        <td>not required </td>
+        <td> function </td>
+        <td> onClick = {(data)=>{ console.log(data)}} </td>
+        <td>If you want to do something on
+          click of box then have to use onClick function it will return 2 parameters. 1st the data of that box and 2nd
+          if
+          getDataOnClick has been sent in it then that </td>
+      </tr>
+      <tr>
+        <td> onClickBranch </td>
+        <td> not required </td>
+        <td> function </td>
+        <td> onClickBranch = {
+          (data)=>{ console.log(data)
+          return(
+          &lt;div&gt; yourHtml
+          &lt;/div&gt;
+          )}
+          } </td>
+        <td> Same as onclick but it will return 2nd param getDataOnClickBranch</td>
+      </tr>
+      <tr>
+        <td> getDataOnClick </td>
+        <td> not required </td>
+        <td> string </td>
+        <td> getDataOnClick = 'your key in data' </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> getDataOnClickBranch </td>
+        <td> not required </td>
+        <td> string </td>
+        <td> getDataOnClickBranch = 'your key in data' </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> showKey </td>
+        <td> not required </td>
+        <td> string </td>
+        <td> showKey = 'your key in data' </td>
+        <td> showKey is the key show that you want to show</td>
+      </tr>
+      <tr>
+        <td> showBranchKey </td>
+        <td> not required </td>
+        <td> string </td>
+        <td> showBranchKey = 'your key in data' </td>
+        <td> showBranchKey is the key show that
+          you
+          want
+          to show in branch box.</td>
+      </tr>
+      <tr>
+        <td> hideKey </td>
+        <td> not required </td>
+        <td> string </td>
+        <td> hideKey = 'your key in data' </td>
+        <td> hideKey is the key that you want to hide from
+          box</td>
+      </tr>
+    </table>
+    <hr />
+    <hr />
 
-  <h2> Contact :-
-    <a href="https://digitalduniya.org/" target="_blank">
-      Contact
-    </a>
-  </h2>
+    <h2> Contact :-
+      <a href="https://digitalduniya.org/" target="_blank">
+        Contact
+      </a>
+    </h2>
 
-  <hr />
-  <hr />
+    <hr />
+    <hr />
+
+  </div>
 
 </body>
 
